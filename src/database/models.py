@@ -8,7 +8,7 @@ Base = declarative_base()
 class Contact(Base):
     __tablename__ = "contact"
 
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(Integer, primary_key=True)
     name = Column(String, index=True, nullable=False)
     surname = Column(String, index=True, nullable=False)
     email = Column(String, unique=True, index=True, nullable=False)
